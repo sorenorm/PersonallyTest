@@ -157,6 +157,7 @@ summary_shoe_bygender <- summarise(grouped_data, mean(shoesize))
 #call the variable to see the summary output
 summary_shoe_bygender
 
+
 ```
 This seems a bit clumsy to write all of this... There must be a better way!
 
@@ -237,7 +238,7 @@ Optionally you can add whatever aesthetics you want to apply to your ggplot (ins
 ```{r}
 #Examples of setups with different aesthetics:
 
-ggplot(df, aes(x=gender)) 
+ggplot(df, aes(x=df$gender)) 
 
 # if only X-axis is known. The Y-axis can be specified later
 
